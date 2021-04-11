@@ -9,17 +9,17 @@ body {
 	font-family: "Courier New", Courier, monospace;
 }
 
-.amazing-nav {
+.responsive-nav {
 	display: flex;
 	flex-direction: row;
 	padding: 0 10rem;
-	background-color: rgb(72, 188, 255);
+	background: linear-gradient(45deg, #3690c4, #48bcff 70%, #3690c4);
 	color: white;
 	box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
 }
 
 @media screen and (max-width: 870px) {
-	.amazing-nav {
+	.responsive-nav {
 		padding: 0 4rem;
 	}
 }
@@ -28,12 +28,11 @@ body {
 	display: flex;
 	justify-content: center;
 	padding: 20px;
-	background-color: rgb(72, 188, 255);
 	color: white;
 }
 
 .logo {
-	font-size: 23px;
+	font-size: 25px;
 	text-decoration: none;
 	color: white;
 	cursor: default;
@@ -53,15 +52,15 @@ body {
 	display: flex;
 	align-items: center;
 	padding: 20px;
-	background-color: rgb(72, 188, 255);
 	transition: all ease-in-out 0.3s;
 	text-decoration: none;
 	color: white;
 	cursor: pointer;
+	font-weight: bold;
 }
 
 .menu-item:hover {
-	box-shadow: 0 -20px 0px 0 rgba(0, 0, 0, 0.322);
+	box-shadow: 0 -30px 0px 0 rgba(0, 0, 0, 0.322);
 	transform: translateY(10px);
 	background-color: rgb(72, 145, 255);
 }
@@ -105,20 +104,20 @@ body {
     padding: 1.125rem 0.625rem;
 }
 
-.amazing-nav .menu-btn {
+.responsive-nav .menu-btn {
 	display: none;
 }
-.amazing-nav .menu-btn:checked ~ .menu {
+.responsive-nav .menu-btn:checked ~ .menu {
 	display: flex;
 }
-.amazing-nav .menu-btn:checked ~ .nav-brand .nav-toggle .toggler-label #nav-toggle-btn {
+.responsive-nav .menu-btn:checked ~ .nav-brand .nav-toggle .toggler-label #nav-toggle-btn {
 	background: transparent;
 }
-.amazing-nav .menu-btn:checked ~ .nav-brand .nav-toggle .toggler-label #nav-toggle-btn::before {
+.responsive-nav .menu-btn:checked ~ .nav-brand .nav-toggle .toggler-label #nav-toggle-btn::before {
 	transform: rotate(-45deg);
 	top: 0;
 }
-.amazing-nav .menu-btn:checked ~ .nav-brand .nav-toggle .toggler-label #nav-toggle-btn::after {
+.responsive-nav .menu-btn:checked ~ .nav-brand .nav-toggle .toggler-label #nav-toggle-btn::after {
 	transform: rotate(45deg);
 	bottom: 0;
 }
@@ -127,7 +126,7 @@ body {
 	.logo {
 		font-size: 30px;
 	}
-	.amazing-nav {
+	.responsive-nav {
 		flex-direction: column;
 		padding: 0;
 	}
